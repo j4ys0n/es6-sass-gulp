@@ -2,7 +2,7 @@
 // Application configuration details
 
 exports.dev = {
-  db: 'mongodb://localhost/mckinsey',
+  db: 'mongodb://localhost/store',
   ports: {
     mongo: 27017,
     server: 8001
@@ -10,7 +10,7 @@ exports.dev = {
 };
 
 exports.prod = {
-    db: 'mongodb://localhost/mckinsey',
+    db: 'mongodb://localhost/store',
     ports: {
       mongo: 27017,
       server: 80
