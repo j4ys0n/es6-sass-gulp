@@ -1,4 +1,4 @@
-﻿import Promise from './promise.min';
+﻿import Promise from './lib/promise.min';
 
 //TODO: make Promise = Promise.Promise
 
@@ -45,7 +45,7 @@ class Utils {
         	}
         	return true;
         };
-       
+
 	}
 
 	loadUrl(url) {
