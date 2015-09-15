@@ -1,6 +1,7 @@
 # es6-sass-gulp
 Boilerplate: [ES6 Front End](http://es6-features.org/), [Sass](http://sass-lang.com/) (with [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/)), [Gulp](http://gulpjs.com/), [Karma/Jasmine](https://www.npmjs.com/package/karma-jasmine)/[Jasmine jQuery](https://github.com/bessdsv/karma-jasmine-jquery), [Node.js](https://nodejs.org/en/), [Express](http://expressjs.com/), [MongoDB](https://www.mongodb.org/)
 
+_by Jayson Jacobs_
 
 ### Installation
 
