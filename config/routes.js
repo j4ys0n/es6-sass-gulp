@@ -7,5 +7,5 @@ var site = require( __dirname + '/../controllers/site' );
 
 module.exports = function(app) {
   app.get( '/', site.default );
-  app.get( '/pagename', site.pagename );
+  //app.get( '/pagename', site.pagename );
 };

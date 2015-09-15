@@ -1,16 +1,22 @@
-﻿import Promise from './lib/promise.min';
+﻿import Promise from '../lib/promise.min';
 
 //TODO: make Promise = Promise.Promise
 
 class Utils {
 	constructor() {
-        this.loadUrl = function(url) {
+		this.loadUrl = function(url, method, params, json, callback) {
             return new Promise.Promise(function(resolve, reject) {
                 var req = new XMLHttpRequest();
-                req.open('GET', url);
+                req.open(method, url);
+				if(json){
+					req.setRequestHeader('Content-type', 'application/json');
+				}
                 req.onload = function() {
                     if(req.status === 200){
                         resolve(req.response);
+						if(callback !== null){
+							callback(req.response);
+						}
                     }else{
                         reject(Error(req.statusText));
                     }
@@ -18,7 +24,7 @@ class Utils {
                 req.onerror = function(){
                     reject(Error('Network Error'));
                 };
-                req.send();
+                req.send(params);
             });
         };
         this.loadScript = function(url) {
